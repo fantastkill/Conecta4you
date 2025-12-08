@@ -1,0 +1,30 @@
+# Arquivos de desenvolvimento
+server.js
+*.sh
+
+# Arquivos de documentação de upload (não necessários no GitHub Pages)
+README-UPLOAD.md
+GUIA-UPLOAD-HOSTINGER.md
+
+# Arquivos compactados
+*.zip
+*.rar
+*.7z
+
+# Arquivos temporários
+*.tmp
+*.log
+
+# Pastas de build antigas (se não forem mais necessárias)
+# Conecta/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+

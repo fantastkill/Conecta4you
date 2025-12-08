@@ -1,0 +1,474 @@
+/* Zotti & Zotti Case Study Styles */
+
+.case-study-main {
+    background: #070A0F;
+    color: #ffffff;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* Prevenir scroll automático */
+html, body {
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    scroll-behavior: auto !important;
+}
+
+/* Garantir que não há animações que causem scroll */
+* {
+    scroll-behavior: auto !important;
+}
+
+/* Sobrescrever scroll-behavior do CSS principal */
+html {
+    scroll-behavior: auto !important;
+    scroll-padding-top: 0 !important;
+}
+
+body {
+    scroll-behavior: auto !important;
+}
+
+/* Prevenir qualquer scroll automático */
+.case-study-main,
+.case-study-hero,
+.campaign-details,
+.case-study-cta {
+    scroll-behavior: auto !important;
+}
+
+/* Hero Section */
+.case-study-hero {
+    padding: 120px 0 80px;
+    background: linear-gradient(135deg, #070A0F 0%, #0F1419 100%);
+}
+
+.case-study-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 60px;
+    align-items: start;
+}
+
+/* Brand Card */
+.brand-card {
+    background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(16, 185, 129, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.brand-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+    pointer-events: none;
+}
+
+.brand-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+}
+
+.brand-icon svg {
+    width: 40px;
+    height: 40px;
+    color: white;
+}
+
+.brand-name {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: white;
+    margin: 0 0 10px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.brand-description {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0 0 20px;
+    font-weight: 600;
+}
+
+.brand-footer {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+}
+
+/* Case Study Content */
+.case-study-content {
+    padding-left: 20px;
+}
+
+.case-study-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #10B981;
+    margin: 0 0 40px;
+    line-height: 1.2;
+}
+
+.challenge-section,
+.solution-section {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #10B981;
+    margin: 0 0 15px;
+}
+
+.section-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #E5E7EB;
+    margin: 0;
+}
+
+.highlight {
+    color: #10B981;
+    font-weight: 600;
+}
+
+/* Results Grid */
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.result-card {
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.result-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #10B981;
+    margin: 0 0 10px;
+}
+
+.result-label {
+    font-size: 0.9rem;
+    color: #9CA3AF;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Campaign Details Section */
+.campaign-details {
+    padding: 80px 0;
+    background: #0F1419;
+}
+
+.campaign-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.campaign-text {
+    padding-right: 20px;
+}
+
+.material-section {
+    margin-top: 40px;
+}
+
+.instagram-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    color: #10B981;
+    font-weight: 600;
+}
+
+.instagram-link svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Advertisement Mockup */
+.advertisement-mockup {
+    position: relative;
+}
+
+.ad-card {
+    background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+    border-radius: 20px;
+    padding: 30px;
+    color: white;
+    box-shadow: 0 20px 40px rgba(16, 185, 129, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.ad-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+    pointer-events: none;
+}
+
+.ad-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.ad-icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+}
+
+.ad-icon svg {
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+
+.ad-brand {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: white;
+}
+
+.ad-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: white;
+    margin: 0 0 25px;
+    line-height: 1.3;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.ad-features {
+    margin-bottom: 25px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.feature-item svg {
+    width: 16px;
+    height: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    flex-shrink: 0;
+}
+
+.ad-cta {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: white;
+    backdrop-filter: blur(10px);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* CTA Section */
+.case-study-cta {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #070A0F 0%, #0F1419 100%);
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #10B981;
+    margin: 0 0 20px;
+}
+
+.cta-text {
+    font-size: 1.2rem;
+    color: #E5E7EB;
+    margin: 0 0 30px;
+    line-height: 1.6;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+    color: white;
+    padding: 18px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 40px rgba(16, 185, 129, 0.4);
+}
+
+.btn-icon {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover .btn-icon {
+    transform: translateX(5px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .case-study-layout,
+    .campaign-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .case-study-content,
+    .campaign-text {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .case-study-title {
+        font-size: 2.5rem;
+    }
+    
+    .results-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .case-study-hero {
+        padding: 100px 0 60px;
+    }
+    
+    .brand-card {
+        padding: 30px 20px;
+    }
+    
+    .brand-name {
+        font-size: 2rem;
+    }
+    
+    .case-study-title {
+        font-size: 2rem;
+    }
+    
+    .results-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .result-card {
+        padding: 20px 15px;
+    }
+    
+    .result-number {
+        font-size: 2rem;
+    }
+    
+    .ad-title {
+        font-size: 1.5rem;
+    }
+    
+    .cta-title {
+        font-size: 2rem;
+    }
+    
+    .campaign-details {
+        padding: 60px 0;
+    }
+    
+    .case-study-cta {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .brand-card {
+        padding: 25px 15px;
+    }
+    
+    .brand-name {
+        font-size: 1.8rem;
+    }
+    
+    .case-study-title {
+        font-size: 1.8rem;
+    }
+    
+    .ad-card {
+        padding: 20px;
+    }
+    
+    .ad-title {
+        font-size: 1.3rem;
+    }
+    
+    .feature-item {
+        font-size: 0.9rem;
+    }
+    
+    .cta-title {
+        font-size: 1.8rem;
+    }
+    
+    .cta-button {
+        padding: 15px 25px;
+        font-size: 1rem;
+    }
+}
